@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/navigation_header_container"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="187dp"
+        app:srcCompat="@drawable/navigation_header"
+        android:id="@+id/imageView3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintHorizontal_bias="1.0" />
+
+    <TextView
+        android:text="Shop Name"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:textSize="20dp"
+        android:background="#b7fdffff"
+        android:id="@+id/tvHeader_shopName"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView3"
+        app:layout_constraintRight_toRightOf="@+id/imageView3"
+        android:gravity="center_vertical"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        android:paddingLeft="15dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:paddingRight="15dp" />
+</android.support.constraint.ConstraintLayout>

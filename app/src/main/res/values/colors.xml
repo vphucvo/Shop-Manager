@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f94b5</color>
+    <color name="colorPrimaryDark">#307c9f</color>
+    <color name="colorAccent">#ffa640</color>
+
+    <!--  buttons color (normal and selector) -->
+    <color name="button">#3f94b5</color>
+    <color name="button_highLight">#9bcbde</color>
+
+    <!-- button text color -->
+    <color name="button_text_color">#ffffff</color>
+
+    <!-- navigation item ripple effect -->
+    <color name="navigation_background">#ffffff</color>
+    <color name="navigation_ripple_effect">#9bcbde</color>
+
+    <!-- dispplay all user > list ciew roe -->
+    <color name="user_listview_row">#102176</color>
+
+
+</resources>

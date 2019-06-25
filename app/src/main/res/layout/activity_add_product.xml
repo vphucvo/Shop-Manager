@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_product"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context="com.khashan.rand.shopmanager.AddProduct_ACTIVITY">
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/productName"
+        android:scrollbars="vertical"
+        android:ems="10"
+        android:id="@+id/et_productName"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.33"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/sp_branchNumber" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/madeIn"
+        android:ems="10"
+        android:id="@+id/et_madeIn"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/et_productName" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/et_madeIn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:id="@+id/linearLayout2">
+
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:inputType="number|numberDecimal"
+            android:hint="@string/firstPrice"
+            android:ems="10"
+            android:longClickable="false"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:id="@+id/et_firstPrice"
+            android:layout_weight="2" />
+
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:inputType="number|numberDecimal"
+            android:hint="@string/finalPrice"
+            android:ems="10"
+            android:longClickable="false"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:id="@+id/et_finalPrice"
+            android:layout_weight="2" />
+
+        <com.khashan.rand.shopmanager.MyCurrencySpinner
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:id="@+id/sp_currency"
+            android:layout_weight="1"
+            android:foreground="@color/button"
+            android:gravity="center_vertical|start"
+            android:foregroundGravity="bottom" />
+    </LinearLayout>
+
+    <Button
+        android:text="+"
+        android:layout_height="50dp"
+        android:id="@+id/b_addTypeQuantity"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:textColor="@color/button_text_color"
+        android:textSize="40dp"
+        android:background="@drawable/button_shap_3_circle"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        android:layout_width="50dp" />
+
+
+    <TextView
+        android:text="@string/hint_piece_quantity_color_orType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:text="@string/add_ProductActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/b_addProduct"
+        android:layout_weight="9"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_shape"
+        android:textColor="@color/button_text_color"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintHorizontal_bias="0.62"
+        android:layout_marginTop="40dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:id="@+id/linearLayout3"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b_addTypeQuantity"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.96"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:text="@string/hint_clickToScanBarcode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView4"
+            tools:layout_editor_absoluteY="530dp"
+            tools:layout_editor_absoluteX="0dp"
+            android:layout_weight="8.5"
+            android:gravity="center_vertical" />
+
+        <Space
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/scan_icon"
+            android:paddingRight="30dp"
+            android:id="@+id/b_scanBarcode"
+            tools:layout_editor_absoluteY="516dp"
+            tools:layout_editor_absoluteX="307dp"
+            android:layout_weight="0.3" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/b_addProduct"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/b_addProduct"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        android:layout_marginTop="40dp"
+        android:id="@+id/linearLayout4">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="#F2DFE9EA"
+            android:nestedScrollingEnabled="true"
+            android:scrollbars="vertical"
+            app:layout_constraintVertical_weight="1"
+            android:id="@+id/lv_productTyps"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="384dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <com.khashan.rand.shopmanager.MyBranchSpinner
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:id="@+id/sp_branchNumber"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyle"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_weight="2"
+        android:visibility="invisible"
+        app:layout_constraintRight_toRightOf="@+id/et_madeIn"
+        app:layout_constraintLeft_toLeftOf="@+id/et_madeIn"
+        app:layout_constraintTop_toTopOf="@+id/sp_branchNumber"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/b_addProduct"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.61" />
+
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>

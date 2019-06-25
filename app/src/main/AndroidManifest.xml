@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.khashan.rand.shopmanager">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity_ACTIVITY"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+        <activity
+            android:name=".SignUp_ACTIVITY"
+            android:label="@string/label_signUp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddUser_ACTIVITY"
+            android:label="@string/label_addUser"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DisplayAllProducts_ACTIVITY"
+            android:label="@string/label_viewProduct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DisplayAllUsers_ACTIVITY"
+            android:label="@string/label_viewUsers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddProduct_ACTIVITY"
+            android:label="@string/label_addProduct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SerchProduct_ACTIVITY"
+            android:label="@string/label_addUser"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WithoutName_LOL_ACTIVITY"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".Sell_ACTIVITY"
+            android:label="@string/Sell"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AccountSetting_ACTIVITY"
+            android:label="@string/label_accountSetting"
+            android:screenOrientation="portrait" />
+
+
+    </application>
+
+</manifest>

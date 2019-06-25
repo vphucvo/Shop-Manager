@@ -1,0 +1,136 @@
+<resources>
+
+    <!-- activitys label userName -->
+    <string name="app_name">ShopManager</string>
+    <string name="myAccount">My Account</string>
+
+
+    <!--  main activity -->
+    <string name="shopName">Shop Name</string>
+    <string name="userName">User Name</string>
+    <string name="password">Password</string>
+    <string name="owner">Owner</string>
+    <string name="employee">Employee</string>
+    <string name="Manager">Manager</string>
+    <string name="logIn">Log In</string>
+    <string name="label_signUp">Sign Up</string>
+
+    <!-- sign up -->
+    <string name="ownerName">Owner Name</string>
+    <string name="ownerPassword">Owner Password - 8 digits</string>
+    <string name="shopType_foodstuffs">Foodstuffs</string>
+    <string name="shopType_clothes">Clothes</string>
+    <string name="agrementMsg">I agree to pay 5 shekel every month</string>
+    <string name="phoneNumber">Phone number</string>
+
+    <!-- Add User  acivity -->
+    <string name="userPassword">User Password</string>
+    <string name="choosePermission">Choose the permissions you wanna give it to user</string>
+    <string name="add_UserActivity">Add</string>
+    <string name="branch">Branch </string>
+
+    <!-- Error message -->
+    <string name="error_noInternetConnection">No internet connection</string>
+    <string name="errotMsg_noPassword">Please enter a password</string>
+    <string name="error_msg_shortPassword">Password too short, it must be at least 8 digit</string>
+    <string name="error_usernameFirstNameOnly">Invalid username, please enter your first and last name</string>
+    <string name="error_invalidPhoneNumber">Invalid phone number</string>
+    <string name="error_paymentAgreement">Please check the agreement box</string>
+    <string name="error_shopNameAlreadyExists">Shop name already exists, please choose another one</string>
+    <string name="error_missingData">Missing data! please fill all the fields</string>
+    <string name="error_userNameAlreadyExists">User name already exists, please choose another one</string>
+    <string name="error_invalidAccountInfo">Invalid account information</string>
+    <string name="error_scanFailed">Somthing wrong, failed to scan!</string>
+    <string name="error_missingScanBarcode">barcode not scanned</string>
+    <string name="error_invalidPrice">InValid price</string>
+    <string name="error_listTypeQuantityIsEmpty">Please insert at least one row of type/quantity list</string>
+    <string name="error_duplicateProductsForThisBranch">This products is already exists for this branch</string>
+    <string name="error_duplicateBarcode">Sorry, duplicate barcode is not available !</string>
+    <string name="error">Failed\n</string>
+
+    <!-- display all products -->
+    <string name="serchByName">Serch by name</string>
+    <string name="serchByBarcode">Serch by barcode</string>
+
+
+    <!-- add product -->
+    <string name="firstPrice">First price</string>
+    <string name="finalPrice">Final price</string>
+    <string name="productName">Product name</string>
+    <string name="madeIn">Made in ?</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="hint_piece_quantity_color_orType">Click on the button to add quantity/type</string>
+    <string name="hint_type">Type</string>
+    <string name="hint_quantity">Quantity</string>
+    <string name="hint_clickToScanBarcode">Click to scan the barcode</string>
+    <string name="add_ProductActivity">Add</string>
+
+
+    <!-- display all products -->
+    <string name="By">By</string>
+    <string name="pieceOf">"piece of "</string>
+    <string name="laseEdited">"Last edited: "</string>
+
+    <!-- open and clode the navigation layout -->
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+    <!-- menu in witoutName activity -->
+    <string name="label_addUser">Add User</string>
+    <string name="label_addProduct">Add Products</string>
+    <string name="account">My Account</string>
+    <string name="log_out">Log out</string>
+    <string name="label_viewProduct">Products</string>
+    <string name="label_viewUsers">Employees</string>
+    <string name="view_sales">Sales</string>
+    <string name="help">Help</string>
+    <string name="contactUs">Contact us</string>
+
+    <!-- user profile -->
+    <string name="profile_name">Name :</string>
+    <string name="profile_work_at">Works at :</string>
+    <string name="profile_permition">Permissions </string>
+    <string name="profile_added_by">Added by :</string>
+
+    <!-- type of currency   -->
+    <string name="currency_dinar">JOD</string>
+    <string name="currency_dollar">$</string>
+    <string name="currency_shekel">Sh</string>
+
+    <!--  permissions the user have -->
+    <string name="permissions_AddManager">Add Manager</string>
+    <string name="permissions_AddEmployee">Add Employee</string>
+    <string name="permissions_AddGoods">Add Products</string>
+    <string name="permissions_DeleteOrEditGoods">Edit/Delete products</string>
+    <string name="permissions_RetriveUsers">See all users information</string>
+    <string name="permissions_sellGoods">Can sell Goods</string>
+    <string name="permissions_ALL">All</string>
+
+    <!-- operations success messages -->
+    <string name="sucessMsg_addUser">User added successfully</string>
+
+    <!--   popup menu -->
+    <string name="popup_delete">Delete</string>
+    <string name="popup_edit">Edit</string>
+
+    <!--  message -->
+    <string name="msg_dilogDeleteUser"></string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="msg_dialogDeleteProduct">Are you sure you wanna delete this Product</string>
+
+    <!-- Sell activity -->
+    <string name="Sell">Sell</string>
+
+    <!-- account setting activity -->
+    <string name="label_accountSetting">Account Setting</string>
+    <string name="SaveAccountSetting">Save</string>
+    <string name="oldPassword">Input old password</string>
+
+    <string name="accountEditSuccsfilly">Account edit successfully</string>
+
+
+
+
+</resources>
